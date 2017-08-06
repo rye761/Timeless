@@ -10,7 +10,7 @@
   <body <?php body_class(); ?>>
     <header>
       <h1><?php bloginfo('title'); ?></h1>
-      <h4><?php bloginfo('description'); ?></h4>
+      <h4><i><?php bloginfo('description'); ?></i></h4>
       <div class="navbar">
         <div class="nav-info text-right">
           <p><?php echo date('l, F j, Y'); ?></p>

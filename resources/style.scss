@@ -13,24 +13,33 @@ Text Domain: timeless
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+$font-family: 'Merriweather', serif;
+$header-font-family: 'Lora', serif;
+$subtitle-color: grey;
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Merriweather", serif; }
+  font-family: $font-family;
+}
 
 header {
   width: 100%;
   text-align: center;
-  font-family: "Lora", serif; }
-  header h1 {
+  font-family: $header-font-family;
+
+  h1 {
     font-size: 5em;
     padding: 50px;
-    padding-bottom: 0px; }
-  header h4 {
-    font-size: 1em;
-    color: grey; }
+    padding-bottom: 0px;
+  }
 
-/*# sourceMappingURL=style.css.map */
+  h4 {
+    font-size: 1em;
+    color: $subtitle-color;
+  }
+}
