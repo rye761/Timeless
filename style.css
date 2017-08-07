@@ -21,16 +21,58 @@ Use it to make something cool, have fun, and share what you've learned with othe
   box-sizing: border-box;
   font-family: "Merriweather", serif; }
 
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
 header {
   width: 100%;
-  text-align: center;
-  font-family: "Lora", serif; }
+  text-align: center; }
   header h1 {
     font-size: 5em;
     padding: 50px;
-    padding-bottom: 0px; }
+    padding-bottom: 0px;
+    font-family: "Lora", serif; }
   header h4 {
     font-size: 1em;
-    color: grey; }
+    color: grey;
+    padding-bottom: 40px; }
+
+nav {
+  display: block;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  color: black;
+  text-align: center;
+  font-size: 0; }
+  nav ul {
+    list-style: none;
+    font-size: 0;
+    width: 60%;
+    display: inline-block; }
+  nav li {
+    display: inline-block;
+    font-size: 1rem; }
+    nav li:hover {
+      background-color: black;
+      color: cornsilk; }
+  nav a {
+    color: inherit;
+    padding: 15px;
+    display: block; }
+
+.nav-info {
+  width: 20%;
+  display: inline-block;
+  font-size: 1rem; }
+
+@media screen and (max-width: 1160px) {
+  .nav-info {
+    display: none; }
+
+  nav ul {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

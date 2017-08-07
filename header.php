@@ -11,13 +11,13 @@
     <header>
       <h1><?php bloginfo('title'); ?></h1>
       <h4><i><?php bloginfo('description'); ?></i></h4>
-      <div class="navbar">
+      <nav>
         <div class="nav-info text-right">
           <p><?php echo date('l, F j, Y'); ?></p>
         </div>
-        <?php wp_nav_menu(); ?>
+        <?php wp_nav_menu(['container' => '', 'menu' => 'primary-menu']); ?>
         <div class="nav-info text-left">
           <p><?php echo wp_count_posts()->publish; ?> Posts</p>
         </div>
-      </div>
+      </nav>
     </header>

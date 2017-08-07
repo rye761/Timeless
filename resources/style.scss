@@ -27,19 +27,75 @@ $subtitle-color: grey;
   font-family: $font-family;
 }
 
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
 header {
   width: 100%;
   text-align: center;
-  font-family: $header-font-family;
 
   h1 {
     font-size: 5em;
     padding: 50px;
     padding-bottom: 0px;
+    font-family: $header-font-family;
   }
 
   h4 {
     font-size: 1em;
     color: $subtitle-color;
+    padding-bottom: 40px;
+  }
+}
+
+nav {
+  display: block;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  color: black;
+  text-align: center;
+  font-size: 0;
+
+  ul {
+    list-style: none;
+    font-size: 0;
+    width: 60%;
+    display: inline-block;
+  }
+
+  li {
+    display: inline-block;
+    font-size: 1rem;
+
+    &:hover {
+      background-color: black;
+      color: cornsilk;
+    }
+  }
+
+  a {
+    color: inherit;
+    padding: 15px;
+    display: block;
+  }
+}
+
+.nav-info {
+  width: 20%;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1160px) {
+  .nav-info {
+    display: none;
+  }
+  nav ul {
+    width: 100%;
   }
 }
