@@ -19,7 +19,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Merriweather", serif; }
+  font-family: "Merriweather", serif;
+  font-size: 1rem; }
 
 a {
   color: deepskyblue; }
@@ -83,10 +84,26 @@ nav {
 .post {
   width: 33.33%;
   display: inline-block;
-  font-size: 1rem;
   padding: 20px;
   vertical-align: top; }
 
+.singular-post {
+  width: 100%;
+  display: inline-block;
+  padding: 20px; }
+
+.singular-post-content {
+  column-count: 3; }
+
+.single-column {
+  column-count: 1; }
+
+@media screen and (max-width: 920px) {
+  .post {
+    width: 100%; }
+
+  .singular-post-content {
+    column-count: 1; } }
 .title {
   color: inherit;
   margin-bottom: 15px;
