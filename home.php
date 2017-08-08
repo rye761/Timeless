@@ -17,6 +17,9 @@ get_header();
   endif;
   ?>
 </div>
+<div class="navigation-links">
+  <?php echo paginate_links(); ?>
+</div>
 <?php
 get_sidebar();
 get_footer();

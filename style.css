@@ -21,6 +21,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
   box-sizing: border-box;
   font-family: "Merriweather", serif; }
 
+a {
+  color: deepskyblue; }
+
 .text-right {
   text-align: right; }
 
@@ -62,6 +65,8 @@ nav {
     color: inherit;
     padding: 15px;
     display: block; }
+    nav a:focus {
+      outline: 0; }
 
 .nav-info {
   width: 20%;
@@ -93,6 +98,10 @@ nav {
   color: grey;
   font-size: 11pt;
   margin-bottom: 15px; }
+
+.navigation-links {
+  text-align: center;
+  padding: 20px; }
 
 @media screen and (max-width: 1160px) {
   .nav-info {

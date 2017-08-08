@@ -17,6 +17,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 $font-family: 'Merriweather', serif;
 $header-font-family: 'Lora', serif;
 $subtitle-color: grey;
+$link-color: deepskyblue;
 
 * {
   margin: 0;
@@ -25,6 +26,10 @@ $subtitle-color: grey;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-family: $font-family;
+}
+
+a {
+  color: $link-color;
 }
 
 .text-right {
@@ -82,6 +87,10 @@ nav {
     color: inherit;
     padding: 15px;
     display: block;
+
+    &:focus {
+      outline: 0;
+    }
   }
 }
 
@@ -119,6 +128,11 @@ nav {
   color: $subtitle-color;
   font-size: 11pt;
   margin-bottom: 15px;
+}
+
+.navigation-links {
+  text-align: center;
+  padding: 20px;
 }
 
 @media screen and (max-width: 1160px) {
