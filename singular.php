@@ -8,8 +8,18 @@ get_header();
       the_post();
       ?>
         <article class="singular-post">
-          <h2><a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-          <h3 class="post-info"><?php the_time('l, F j, Y'); ?></h3>
+          <h2>
+            <p class="title" href="<?php the_permalink(); ?>">
+              <?php the_title(); ?>
+              <?php
+                edit_post_link('<img class="edit-icon" src="'
+                .get_template_directory_uri().'/img/edit.svg" alt="Edit This">');
+              ?>
+            </p>
+          </h2>
+          <?php if (is_single()): ?>
+          <h3 class="post-info"><?php the_time(get_option('date_format')); ?></h3>
+          <?php endif; ?>
           <?php $singlecolumn = (count(explode(" ", get_the_content())) < 100) ? 'single-column' : ''; ?>
           <div class="singular-post-content <?php echo $singlecolumn ?>">
             <?php the_content(); ?>
@@ -21,6 +31,12 @@ get_header();
   ?>
 </div>
 <?php
+wp_link_pages(
+  [
+    'before' => '<div class="navigation-links">',
+    'after' => '</div>'
+  ]
+);
 get_sidebar();
 get_footer();
 ?>

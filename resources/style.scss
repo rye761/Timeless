@@ -142,7 +142,6 @@ nav {
 
 .title {
   color: inherit;
-  margin-bottom: 15px;
   font-family: 'Open Sans', sans-serif;
   font-size: 22pt;
   text-decoration: none;
@@ -157,6 +156,11 @@ nav {
 .navigation-links {
   text-align: center;
   padding: 20px;
+}
+
+.edit-icon {
+  width: 24px;
+  height: 24px;
 }
 
 @media screen and (max-width: 1160px) {

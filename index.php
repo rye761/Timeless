@@ -9,13 +9,16 @@ get_header();
       ?>
         <article class="post">
           <h2><a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-          <h3 class="post-info"><?php the_time('l, F j, Y'); ?></h3>
+          <h3 class="post-info"><?php the_time(get_option('date_format')); ?></h3>
           <?php the_content(); ?>
         </article>
       <?php
     endwhile;
   endif;
   ?>
+</div>
+<div class="navigation-links">
+  <?php echo paginate_links(); ?>
 </div>
 <?php
 get_sidebar();
