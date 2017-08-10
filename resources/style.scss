@@ -163,6 +163,47 @@ nav {
   height: 24px;
 }
 
+.required {
+  color: tomato;
+}
+
+.comment-section {
+  padding: 20px;
+  ol {
+    list-style: none;
+  }
+}
+
+.comment-list {
+  margin-bottom: 50px;
+
+  .children {
+    margin-left: 30px;
+  }
+}
+
+.comment {
+  margin-top: 20px;
+}
+
+.avatar {
+  vertical-align: middle;
+}
+
+.comment-reply-title {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.comment-form {
+  label {
+    display: block;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+}
+
 @media screen and (max-width: 1160px) {
   .nav-info {
     display: none;

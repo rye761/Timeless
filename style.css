@@ -123,6 +123,33 @@ nav {
   width: 24px;
   height: 24px; }
 
+.required {
+  color: tomato; }
+
+.comment-section {
+  padding: 20px; }
+  .comment-section ol {
+    list-style: none; }
+
+.comment-list {
+  margin-bottom: 50px; }
+  .comment-list .children {
+    margin-left: 30px; }
+
+.comment {
+  margin-top: 20px; }
+
+.avatar {
+  vertical-align: middle; }
+
+.comment-reply-title {
+  font-family: 'Open Sans', sans-serif; }
+
+.comment-form label {
+  display: block; }
+.comment-form p {
+  margin-bottom: 20px; }
+
 @media screen and (max-width: 1160px) {
   .nav-info {
     display: none; }
