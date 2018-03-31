@@ -51,7 +51,7 @@ nav {
   color: black;
   text-align: center;
   font-size: 0; }
-  nav ul {
+  nav .menu {
     list-style: none;
     font-size: 0;
     width: 60%;
