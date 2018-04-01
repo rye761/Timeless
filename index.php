@@ -14,6 +14,8 @@ get_header();
         </article>
       <?php
     endwhile;
+  else:
+    ?><h1 class="error-message"><?php _e('No posts found.');?></h1><?php
   endif;
   ?>
 </div>
