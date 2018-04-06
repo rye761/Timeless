@@ -23,3 +23,13 @@ function timeless_post_query($query) {
 		$query->set('posts_per_page', 3);
 	}
 }
+
+function timeless_excerpt_length() {
+	return 300;
+}
+
+function timeless_excerpt_more() {
+	return ' <a href="'.get_permalink().'">'.__('Continue Reading').'&rarr;</a>';
+}
+add_filter('excerpt_length', 'timeless_excerpt_length', 999);
+add_filter('excerpt_more', 'timeless_excerpt_more', 999);

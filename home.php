@@ -10,7 +10,7 @@ get_header();
         <article class="post">
           <h2><a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
           <h3 class="post-info"><?php the_time(get_option('date_format')); ?></h3>
-          <?php the_content(__('Continue Reading').'&rarr;'); ?>
+          <?php the_excerpt(); ?>
         </article>
       <?php
     endwhile;

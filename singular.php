@@ -20,7 +20,7 @@ get_header();
           <?php if (is_single()): ?>
           <h3 class="post-info"><?php the_time(get_option('date_format')); ?></h3>
           <?php endif; ?>
-          <?php $singlecolumn = (count(explode(" ", get_the_content())) < 100) ? 'single-column' : ''; ?>
+          <?php $singlecolumn = (count(explode(" ", get_the_content())) < 200) ? 'single-column' : ''; ?>
           <div class="singular-post-content <?php echo $singlecolumn ?>">
             <?php the_content(); ?>
           </div>
