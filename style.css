@@ -102,6 +102,16 @@ nav {
   padding: 20px;
   text-align: center; }
 
+.sidebar {
+  width: 100%;
+  text-align: center; }
+  .sidebar aside {
+    display: inline-block;
+    vertical-align: top;
+    padding: 50px; }
+  .sidebar ul {
+    list-style: none; }
+
 @media screen and (max-width: 920px) {
   .post {
     width: 100%; }
