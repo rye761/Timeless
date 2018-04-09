@@ -10,7 +10,11 @@ get_header();
         <article class="post">
           <h2><a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
           <h3 class="post-info"><?php the_time(get_option('date_format')); ?></h3>
-          <?php the_excerpt(); ?>
+          <?php
+          if (has_post_thumbnail()):
+            the_post_thumbnail('large');
+          endif;
+          the_excerpt(); ?>
         </article>
       <?php
     endwhile;

@@ -17,6 +17,7 @@ function timeless_scripts() {
 
 function timeless_setup() {
 	add_theme_support('title-tag');
+	add_theme_support('post-thumbnails');
 }
 
 function timeless_post_query($query) {
