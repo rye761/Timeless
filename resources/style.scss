@@ -234,15 +234,23 @@ nav {
   p {
     margin-bottom: 20px;
   }
+}
 
-  textarea, input[type=text] {
-    background-color: white;
-    border: 2px solid black;
-    padding: 5px;
+.searchform {
+  input{
+    height: 30px;
+    line-height: 15px;
+    vertical-align: middle;
   }
 }
 
-.submit {
+textarea, input[type=text] {
+  background-color: white;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+input[type=submit] {
   background-color: white;
   border: 2px solid black;
   padding: 5px;

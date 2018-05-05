@@ -173,17 +173,23 @@ nav {
   margin-bottom: 5px; }
 .comment-form p {
   margin-bottom: 20px; }
-.comment-form textarea, .comment-form input[type=text] {
+
+.searchform input {
+  height: 30px;
+  line-height: 15px;
+  vertical-align: middle; }
+
+textarea, input[type=text] {
   background-color: white;
   border: 2px solid black;
   padding: 5px; }
 
-.submit {
+input[type=submit] {
   background-color: white;
   border: 2px solid black;
   padding: 5px;
   font-family: 'Open Sans', sans-serif; }
-  .submit:hover {
+  input[type=submit]:hover {
     cursor: pointer;
     background-color: black;
     color: cornsilk; }
